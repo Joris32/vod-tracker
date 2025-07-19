@@ -3,7 +3,7 @@
 
   // Default settings
   settings = {
-    toggleSeenKey: settings.toggleSeenKey || "none"
+    toggleSeenKey: settings.toggleSeenKey || "none",
     clearProgressKey: settings.clearProgressKey || "ctrl"
   };
 
