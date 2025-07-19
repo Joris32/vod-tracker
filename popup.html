@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 250px }
+    label { display: block; margin-top: 10px }
+    select { width: 100% }
+    button { margin-top: 15px; width: 100% }
+  </style>
+</head>
+<body>
+  <h3>VOD Progress Tracker Settings</h3>
+
+<p style="font-size: 0.9em; color: #555; margin-bottom: 10px;">
+  Right-click + modifier key to mark a VOD as watched, or clear your currently saved progress in the VOD.<br>
+  Clicking on a VOD with saved progress will bring you back to where you left off.
+</p>
+
+  <label>
+    Toggle Watched Key:
+    <select id="toggleSeenKey">
+      <option value="none">None (Right-click only)</option>
+      <option value="ctrl">Ctrl</option>
+      <option value="alt">Alt</option>
+    </select>
+  </label>
+
+  <label>
+    Clear Progress Key:
+    <select id="clearProgressKey">
+      <option value="ctrl">Ctrl</option>
+      <option value="alt">Alt</option>
+    </select>
+  </label>
+
+  <button id="saveBtn">Save Settings</button>
+
+  <div id="status" style="margin-top:10px; color:green;"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

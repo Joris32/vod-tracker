@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "VOD Progress Tracker",
+  "version": "1.0",
+  "description": "Marks watched and in-progress videos on archive.wubby.tv",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://archive.wubby.tv/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+  "50": "icon-50.png",
+  "100": "icon-100.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "50": "icon-50.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "vod-tracker@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}
