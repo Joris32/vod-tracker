@@ -22,7 +22,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "vod-tracker@example.com",
+      "id": "vod-tracker2@example.com",
       "strict_min_version": "109.0"
     }
   }
