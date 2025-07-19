@@ -1,7 +1,6 @@
 (async () => {
   let { seen = [], positions = {}, settings = {} } = await browser.storage.local.get(["seen", "positions", "settings"]);
 
-  // Default settings
   settings = {
     toggleSeenKey: settings.toggleSeenKey || "none",
     clearProgressKey: settings.clearProgressKey || "ctrl"
